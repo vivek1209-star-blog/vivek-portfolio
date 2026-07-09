@@ -14,7 +14,7 @@ export const SITE = {
   email: "vivekmishra1209@gmail.com",
   phone: "+91 9930728882",
   availability: "Open to Senior Full-Stack roles · 2 months notice",
-  url: "https://vivek-portfolio.vercel.app", // ← update to your actual Vercel URL after first deploy
+  url: "https://vivek-portfolio-six-nu.vercel.app/", // ← update to your actual Vercel URL after first deploy
   resumePath: "/resume.pdf",
   photo: "/profile.jpg",
   rotatingTitles: [
