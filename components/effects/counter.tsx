@@ -12,7 +12,7 @@ export function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
       duration: 1.6,
       ease: "easeOut",
       onUpdate: (v) => {
-        if (ref.current) ref.current.textContent = `${Math.round(v)}${suffix}`;
+        if (ref.current) ref.current.textContent = `${Number.isInteger(to) ? Math.round(v) : v.toFixed(1)}${suffix}`;
       },
     });
     return () => controls.stop();

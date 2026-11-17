@@ -14,7 +14,7 @@ export function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="Where I've worked"
-          subtitle="4+ years across fintech, payments, CRM, and healthcare products."
+          subtitle="4.8 years across fintech, payments, CRM, and healthcare products."
         />
 
         <div className="relative">

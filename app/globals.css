@@ -188,3 +188,29 @@ body {
   outline-offset: 3px;
   border-radius: 6px;
 }
+
+/* ── Spotlight card: glow follows the mouse ───────────────── */
+.spotlight-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.35s;
+  background: radial-gradient(
+    380px circle at var(--sx, 50%) var(--sy, 50%),
+    rgba(6, 182, 212, 0.18),
+    rgba(124, 58, 237, 0.1) 40%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+.spotlight-card:hover::before {
+  opacity: 1;
+}
+.spotlight-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.spotlight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 50px -18px rgba(124, 58, 237, 0.5);
+}

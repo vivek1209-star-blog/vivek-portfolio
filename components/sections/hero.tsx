@@ -15,7 +15,8 @@ const SOCIAL_ICONS: Record<string, React.ReactNode> = {
   npm: <Package size={18} />,
 };
 
-const FLOATING_TECH = ["React", "Node.js", "TypeScript", "MySQL", "MongoDB", "Redux"];
+const FLOATING_TECH = ["React", "Node.js", "TypeScript", "React Native", "MongoDB", "Redux", "Angular", "MySQL"];
+const FLOAT_TOP = [2, 14, 30, 44, 60, 72, 88, 92];
 
 /** Word-by-word text reveal. */
 function RevealWords({ text, delay = 0 }: { text: string; delay?: number }) {
@@ -86,7 +87,7 @@ export function Hero() {
           <h1 className="font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl">
             <RevealWords text="Hi, I'm" delay={1.6} />
             <br />
-            <span className="text-gradient">
+            <span className="text-gradient bg-[length:200%_auto] animate-shimmer">
               <RevealWords text={SITE.name} delay={1.8} />
             </span>
           </h1>
@@ -108,6 +109,23 @@ export function Hero() {
           >
             {SITE.tagline}
           </motion.p>
+
+          <motion.ul
+            initial="hidden"
+            animate="show"
+            variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08, delayChildren: 2.4 } } }}
+            className="mt-5 flex flex-wrap gap-2"
+          >
+            {SITE.highlights.map((h) => (
+              <motion.li
+                key={h}
+                variants={{ hidden: { opacity: 0, y: 10, scale: 0.95 }, show: { opacity: 1, y: 0, scale: 1 } }}
+                className="glass rounded-full px-3 py-1 text-xs font-medium text-foreground/90"
+              >
+                {h}
+              </motion.li>
+            ))}
+          </motion.ul>
 
           <motion.div
             initial={{ opacity: 0, y: 14 }}
@@ -176,7 +194,7 @@ export function Hero() {
               key={tech}
               className="glass absolute rounded-full px-3 py-1.5 text-xs font-semibold"
               style={{
-                top: `${[4, 18, 52, 78, 88, 38][i]}%`,
+                top: `${FLOAT_TOP[i]}%`,
                 left: i % 2 === 0 ? "-14%" : "auto",
                 right: i % 2 === 1 ? "-14%" : "auto",
               }}

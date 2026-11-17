@@ -9,7 +9,7 @@ export function Certifications() {
     <section id="certifications" className="relative py-28">
       <div className="mx-auto max-w-5xl px-6">
         <SectionHeading eyebrow="Certifications" title="Verified learning" />
-        <div className="grid gap-6 sm:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {CERTIFICATIONS.map((cert, i) => (
             <Reveal key={cert.title} delay={i * 0.1}>
               <div className="gradient-border group h-full p-[1px]">
@@ -18,7 +18,10 @@ export function Certifications() {
                     <Award size={22} />
                   </span>
                   <h3 className="mt-4 font-semibold">{cert.title}</h3>
-                  <p className="mt-1 text-sm text-muted">{cert.issuer}</p>
+                  <p className="mt-1 text-sm text-muted">
+                    {cert.issuer}
+                    {cert.year !== "—" && <span className="text-secondary"> · {cert.year}</span>}
+                  </p>
                 </div>
               </div>
             </Reveal>

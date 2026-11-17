@@ -1,28 +1,30 @@
 // ─────────────────────────────────────────────────────────────
 // SINGLE SOURCE OF TRUTH for all portfolio content.
 // Everything here comes from Vivek Mishra's real resume / Naukri
-// profile (Jul 2026). Items marked [PLACEHOLDER] need real data.
+// profile (Nov 2026). Items marked [PLACEHOLDER] need real data.
 // ─────────────────────────────────────────────────────────────
 
 export const SITE = {
   name: "Vivek Mishra",
   firstName: "Vivek",
-  title: "Full-Stack MERN Developer",
+  title: "Full Stack Developer (MERN)",
   tagline:
-    "I build scalable fintech & SaaS products — payments, multi-tenant platforms, and real-time dashboards.",
+    "I build scalable fintech & SaaS products — payments, multi-tenant platforms, real-time dashboards and React Native apps.",
   location: "Mumbai, India",
   email: "vivekmishra1209@gmail.com",
   phone: "+91 9930728882",
-  availability: "Open to Senior Full-Stack roles · 2 months notice",
+  availability: "Open to Full-Stack roles · 1 month notice (negotiable)",
   url: "https://vivek-portfolio-six-nu.vercel.app/", // ← update to your actual Vercel URL after first deploy
   resumePath: "/resume.pdf",
   photo: "/profile.jpg",
   rotatingTitles: [
-    "Full-Stack MERN Developer",
+    "Full Stack Developer (MERN)",
     "Fintech & Payments Engineer",
-    "React + Node.js Specialist",
+    "React · Node.js · React Native",
     "Open-Source Author (npm)",
   ],
+  // short proof-points shown under the hero tagline
+  highlights: ["4.8 yrs experience", "3 live fintech & SaaS products", "npm library author", "React Native · Angular 17"],
 };
 
 export const SOCIALS = [
@@ -34,7 +36,7 @@ export const SOCIALS = [
 
 export const ABOUT = {
   summary:
-    "Full-Stack MERN Developer with 4+ years of experience building scalable, secure web applications across fintech, payments, healthcare, and CRM domains. Strong expertise in React.js, Redux, Node.js, Express, MySQL, and MongoDB — with hands-on payment gateway integrations (BillDesk, Razorpay), BBPS workflows, multi-role authentication, and real-time dashboards. Author of react-bulk-excel-import, an open-source npm library.",
+    "Full Stack Developer with 4.8 years of experience building scalable, secure web applications across fintech, payments, healthcare, and CRM domains. Strong expertise in React.js, Redux, Node.js, Express, MySQL, MongoDB, React Native and TypeScript — with hands-on payment gateway integrations (BillDesk, Razorpay), BBPS workflows, multi-role authentication, and real-time dashboards. Author of react-bulk-excel-import, an open-source npm library. Working knowledge of Angular (Angular 17 via personal projects). Notice period: 1 month (negotiable).",
   journey: [
     {
       year: "2021",
@@ -44,7 +46,7 @@ export const ABOUT = {
     {
       year: "2022",
       title: "Senior Frontend Developer",
-      body: "Joined Boldsoftmation LLP — designed and led a multi-department CRM platform (leads, invoices, follow-ups, dispatch) with React, Material UI, and Redux Thunk.",
+      body: "Joined Boldsoftmation LLP — built a multi-department CRM platform (leads, invoices, follow-ups, dispatch) with React, Material UI and Redux Thunk, plus a React Native Lead Management app for Android & iOS.",
     },
     {
       year: "2024",
@@ -54,12 +56,12 @@ export const ABOUT = {
     {
       year: "2025",
       title: "Full-stack ownership",
-      body: "Joined Champion Software Technologies — building two production SaaS products end-to-end: a BBPS bill-payment platform and 360Pass.",
+      body: "Joined Champion Software Technologies — building three production fintech & SaaS products end-to-end: a BBPS bill-payment platform, MasterPe merchant onboarding and 360Pass.",
     },
     {
       year: "2026",
       title: "Open source & beyond",
-      body: "Published react-bulk-excel-import on npm and continue shipping fintech-grade features while writing about React & Node.js on Medium and LinkedIn.",
+      body: "Published react-bulk-excel-import on npm, earned the Learning Docker certificate, built a MERN CI/CD pipeline on Kubernetes, and keep writing about React & Node.js on Medium and LinkedIn.",
     },
   ],
 };
@@ -67,13 +69,13 @@ export const ABOUT = {
 export const EXPERIENCE = [
   {
     company: "Champion Software Technologies",
-    role: "MERN Stack Developer",
+    role: "Full Stack Developer (MERN)",
     period: "Aug 2025 — Present",
     location: "Mumbai, India",
     logo: "/logos/champion.png",
     tech: ["React", "Redux Toolkit", "Node.js", "Express", "MySQL", "Sequelize", "BillDesk", "Razorpay"],
     points: [
-      "Building two production SaaS products end-to-end: a BBPS bill-payment platform and 360Pass, a multi-tenant society & gate-management system.",
+      "Building three production fintech & SaaS products end-to-end: a BBPS bill-payment platform, MasterPe (KYC-based merchant onboarding with Aadhaar/PAN upload and admin panel) and 360Pass, a multi-tenant society & gate-management system.",
       "Integrated BillDesk and Razorpay gateways with complete BBPS workflows — bill fetch, validation, payment, reconciliation — with idempotent webhook handling and fault-tolerant REST APIs.",
       "Built multi-role authentication & access control (Super Admin, Society Admin, Resident, Gatekeeper) with session-sync auto-logout on access revocation.",
       "Developed the 360Pass front-end with a scalable page → hook → store architecture, a reusable component library, and a real-time gate-presence dashboard with live visitor tracking.",
@@ -83,7 +85,7 @@ export const EXPERIENCE = [
   {
     company: "Adecco India",
     role: "Software Developer",
-    period: "Aug 2024 — Mar 2025",
+    period: "Jul 2024 — Mar 2025",
     location: "Mumbai, India",
     logo: "/logos/adecco.png",
     tech: ["React", "Vite", "Tailwind CSS", "Redux Saga", "REST APIs"],
@@ -99,11 +101,11 @@ export const EXPERIENCE = [
     period: "Aug 2022 — May 2024",
     location: "Mumbai, India",
     logo: "/logos/boldsoftmation.png",
-    tech: ["React", "Material UI", "Redux Thunk", "REST APIs"],
+    tech: ["React", "Material UI", "Redux Thunk", "React Native", "REST APIs"],
     points: [
       "Designed and developed a multi-department CRM platform covering leads, invoices, follow-ups, and dispatch modules.",
       "Built responsive, reusable UI components and managed application state across modules with Redux Thunk.",
-      "Streamlined repetitive CRM operations into shared flows, improving team workflow efficiency.",
+      "Built a Lead Management mobile app in React Native for Android & iOS — add, assign and track leads with follow-up reminders; handled navigation, login flow, API integration and release builds.",
     ],
   },
   {
@@ -112,21 +114,21 @@ export const EXPERIENCE = [
     period: "Sep 2021 — Jun 2022",
     location: "Mumbai, India",
     logo: "/logos/codeb.png",
-    tech: ["React Native", "React", "Node.js", "Express", "MongoDB"],
+    tech: ["React Native", "React", "Node.js", "Express", "MongoDB", "Angular"],
     points: [
       "Developed cross-platform React Native apps (Android focus) for healthcare and survey products — Mito Healthcare and Survey Magic.",
       "Built and enhanced React.js web features including UI development and REST API integration.",
-      "Contributed to full-stack features with Node.js, Express, and MongoDB.",
+      "Built APIs and fixed production issues with Node.js, Express, and MongoDB; delivered an Angular module for a client project.",
     ],
   },
   {
     company: "Patharitch Pvt Ltd",
-    role: "Intern — Software Development",
+    role: "Front End Developer Intern",
     period: "Jun 2021 — Sep 2021",
     location: "Mumbai, India",
     logo: "/logos/patharitch.png",
-    tech: ["JavaScript", "React"],
-    points: ["Internship — foundation in professional web development workflows."],
+    tech: ["Angular", "TypeScript", "HTML5", "CSS3"],
+    points: ["Built UI screens with Angular, TypeScript, HTML5 and CSS3; integrated REST APIs and resolved UI issues."],
   },
 ];
 
@@ -147,10 +149,17 @@ export const SKILLS: SkillGroup[] = [
     category: "Frontend",
     skills: [
       { name: "React.js", level: 92 },
-      { name: "React Native", level: 75 },
       { name: "Tailwind CSS", level: 88 },
       { name: "Material UI", level: 85 },
-      { name: "Angular", level: 60 },
+      { name: "Angular 17", level: 60 },
+    ],
+  },
+  {
+    category: "Mobile",
+    skills: [
+      { name: "React Native (Android & iOS)", level: 80 },
+      { name: "Navigation & Release Builds", level: 72 },
+      { name: "Firebase Cloud Messaging", level: 75 },
     ],
   },
   {
@@ -190,9 +199,10 @@ export const SKILLS: SkillGroup[] = [
   {
     category: "Tools & Deployment",
     skills: [
-      { name: "Git / Bitbucket", level: 88 },
-      { name: "CI/CD", level: 70 },
-      { name: "Docker", level: 65 },
+      { name: "Git / GitHub / GitLab", level: 88 },
+      { name: "CI/CD (GitHub Actions)", level: 75 },
+      { name: "Docker", level: 70 },
+      { name: "Kubernetes (basics)", level: 50 },
       { name: "npm publishing", level: 85 },
     ],
   },
@@ -201,7 +211,7 @@ export const SKILLS: SkillGroup[] = [
 export const TECH_MARQUEE = [
   "React", "TypeScript", "Node.js", "Express", "MySQL", "MongoDB", "Redux",
   "Tailwind CSS", "Sequelize", "React Native", "BillDesk", "Razorpay",
-  "Git", "Docker", "Vite", "Material UI", "WebSockets", "REST APIs",
+  "Git", "Docker", "GitHub Actions", "Kubernetes", "Vite", "Material UI", "WebSockets", "REST APIs", "Angular", "Firebase",
 ];
 
 export const PROJECTS = [
@@ -272,6 +282,24 @@ export const PROJECTS = [
     links: { github: null, live: null, caseStudy: null }, // proprietary
   },
   {
+    title: "MasterPe",
+    subtitle: "Merchant Onboarding · Fintech",
+    role: "Full-Stack Developer",
+    period: "Sep 2026 — Present",
+    image: "/projects/masterpe.png", // [PLACEHOLDER] gradient fallback until a screenshot is added
+    tech: ["React", "Node.js", "Express", "MySQL", "JWT", "RBAC"],
+    description:
+      "Merchant onboarding platform with KYC verification — Aadhaar and PAN document upload, onboarding status tracking and an admin panel to review and approve merchants.",
+    features: [
+      "KYC flow with Aadhaar & PAN document upload",
+      "Onboarding status tracking for every merchant",
+      "Admin panel to review and approve merchants with role-based access",
+    ],
+    challenges: "Keeping sensitive KYC documents and approval steps secure while the flow stays simple for merchants.",
+    solutions: "Role-based REST APIs in Node.js/Express with JWT auth, validated uploads and a clear status pipeline surfaced in the admin panel.",
+    links: { github: null, live: null, caseStudy: null }, // proprietary
+  },
+  {
     title: "Mahindra Finance Web App",
     subtitle: "Enterprise fintech UI",
     role: "Frontend Developer (Adecco)",
@@ -294,11 +322,12 @@ export const PROJECTS = [
     role: "Senior Frontend Developer (Boldsoftmation)",
     period: "2022 — 2024",
     image: "/projects/Multi-Department_CRM_Platform.png",
-    tech: ["React", "Material UI", "Redux Thunk"],
+    tech: ["React", "Material UI", "Redux Thunk", "React Native"],
     description:
-      "Manages leads, customer data, invoicing, follow-ups, and dispatch operations in a unified platform used across departments.",
+      "Manages leads, customer data, invoicing, follow-ups, and dispatch operations in a unified platform used across departments — with a companion React Native Lead Management app for Android & iOS.",
     features: [
-      "Reusable UI component system across modules",
+      "React Native mobile app: add, assign and track leads with follow-up reminders",
+      "Reusable UI component system across web and mobile",
       "Shared flows for repetitive CRM operations",
     ],
     challenges: "Divergent workflows per department in a single product.",
@@ -322,7 +351,92 @@ export const PROJECTS = [
     solutions: "Shared design patterns and API contracts between platforms.",
     links: { github: null, live: "https://www.bananabucks.co/", caseStudy: null },
   },
+  {
+    title: "MERN CI/CD Pipeline",
+    subtitle: "DevOps · Personal project",
+    role: "Author",
+    period: "Aug 2026 — Oct 2026",
+    image: "/projects/mern-cicd.png", // [PLACEHOLDER] gradient fallback until a screenshot is added
+    tech: ["Docker", "GitHub Actions", "Docker Hub", "Kubernetes", "MERN"],
+    description:
+      "Containerized a MERN app with multi-stage Dockerfiles, automated builds to Docker Hub using GitHub Actions and deployed it on a local Kubernetes cluster.",
+    features: [
+      "Multi-stage Dockerfiles for small production images",
+      "GitHub Actions workflow: build → push to Docker Hub",
+      "Deployment on a local Kubernetes cluster",
+    ],
+    challenges: "Getting a repeatable build-and-deploy path instead of manual steps.",
+    solutions: "One pipeline that builds, tags and pushes images on every push, with Kubernetes manifests for deployment.",
+    links: { github: "https://github.com/vivek1209-star-blog/mern-cicd-demo", live: null, caseStudy: null },
+  },
 ];
+
+// Achievements shown in the bento grid. Every item is a real, verifiable fact.
+export const ACHIEVEMENTS = [
+  {
+    icon: "package",
+    metric: "npm",
+    title: "Open-source library author",
+    body: "Built and published react-bulk-excel-import — a React + TypeScript library (MIT) for bulk Excel import, used in production.",
+    href: "https://www.npmjs.com/package/react-bulk-excel-import",
+    cta: "View on npm",
+    wide: true,
+  },
+  {
+    icon: "rocket",
+    metric: "3",
+    title: "Live fintech & SaaS products",
+    body: "BBPS bill payments, MasterPe merchant onboarding and 360Pass — shipped end to end.",
+    href: null,
+    cta: null,
+    wide: false,
+  },
+  {
+    icon: "credit-card",
+    metric: "2",
+    title: "Payment gateways integrated",
+    body: "BillDesk & Razorpay across the full BBPS flow — fetch, validate, pay, reconcile.",
+    href: null,
+    cta: null,
+    wide: false,
+  },
+  {
+    icon: "smartphone",
+    metric: "3",
+    title: "React Native apps",
+    body: "Lead Management, Mito Healthcare and Survey Magic — for Android & iOS.",
+    href: null,
+    cta: null,
+    wide: false,
+  },
+  {
+    icon: "pen",
+    metric: "Medium",
+    title: "Technical writing",
+    body: "Articles on JWT authentication in the MERN stack and on turning a thrice-built Excel import feature into a library.",
+    href: "https://medium.com/@mishra.vivek9612",
+    cta: "Read on Medium",
+    wide: false,
+  },
+  {
+    icon: "users",
+    metric: "1,200+",
+    title: "LinkedIn followers",
+    body: "Sharing React, Node.js and JavaScript deep dives — hooks, JWT auth and SaaS architecture.",
+    href: "https://www.linkedin.com/in/vivek-mishra-19941b113",
+    cta: "Follow on LinkedIn",
+    wide: false,
+  },
+  {
+    icon: "container",
+    metric: "CI/CD",
+    title: "Docker & Kubernetes",
+    body: "Learning Docker certificate (2026) plus a hands-on MERN pipeline: Docker Hub → Kubernetes.",
+    href: "https://github.com/vivek1209-star-blog/mern-cicd-demo",
+    cta: "View on GitHub",
+    wide: false,
+  },
+] as const;
 
 export const SERVICES = [
   {
@@ -361,6 +475,8 @@ export const CERTIFICATIONS = [
   { title: "JavaScript (Intermediate)", issuer: "HackerRank", year: "—" },
   { title: "JavaScript (Basic)", issuer: "HackerRank", year: "—" },
   { title: "Dive in and Learn React.js from Scratch", issuer: "Udemy", year: "—" },
+  { title: "Learning Docker", issuer: "LinkedIn Learning", year: "2026" },
+  { title: "Node.js (Basic)", issuer: "HackerRank", year: "2025" },
 ];
 
 export const EDUCATION = [
@@ -371,7 +487,7 @@ export const EDUCATION = [
   },
   {
     degree: "BCA — Bachelor of Computer Applications",
-    school: "Yashwantrao Chavan Maharashtra Open University (YCMOU)",
+    school: "K.P.B. Hinduja College of Commerce — YCMOU",
     period: "2015 — 2018",
   },
 ];
@@ -399,9 +515,9 @@ export const TESTIMONIALS = [
 ];
 
 export const STATS = [
-  { label: "Years of Experience", value: 4, suffix: "+" },
-  { label: "Production Projects", value: 7, suffix: "+" },
-  { label: "Technologies", value: 18, suffix: "+" },
+  { label: "Years of Experience", value: 4.8, suffix: "" },
+  { label: "Production Projects", value: 8, suffix: "+" },
+  { label: "Technologies", value: 20, suffix: "+" },
   { label: "Companies Served", value: 5, suffix: "" },
 ];
 
@@ -410,6 +526,7 @@ export const NAV_LINKS = [
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Achievements", href: "#achievements" },
   { label: "Services", href: "#services" },
   { label: "Contact", href: "#contact" },
 ];

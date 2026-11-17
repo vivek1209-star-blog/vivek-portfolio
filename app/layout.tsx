@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   description: SITE.tagline,
   keywords: [
-    "Vivek Mishra", "Full-Stack Developer", "MERN Developer", "React Developer Mumbai",
+    "Vivek Mishra", "Full-Stack Developer", "MERN Developer", "React Developer Mumbai", "React Native Developer", "Angular", "Node.js Developer",
     "Node.js Developer", "Fintech Developer", "BBPS", "Payment Gateway Integration",
     "react-bulk-excel-import",
   ],
